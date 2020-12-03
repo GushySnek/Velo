@@ -1,0 +1,9 @@
+twig:
+    default_path: '%kernel.project_dir%/templates'
+    debug: '%kernel.debug%'
+    strict_variables: '%kernel.debug%'
+    exception_controller: null
+    globals:
+#        Inject service as var in templates, pour avoir mon form generator depuis n'importe quel template
+        search: '@App\Search\SearchFormGenerator'
+    form_themes: ['bootstrap_4_horizontal_layout.html.twig']
